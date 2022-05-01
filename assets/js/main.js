@@ -123,7 +123,7 @@
   );
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * Scroll with offset on page load with hash links in the url
    */
   window.addEventListener("load", () => {
     if (window.location.hash) {
@@ -176,11 +176,11 @@
         itemSelector: ".portfolio-item",
       });
 
-      let portfolioFilters = select("#portfolio-flters li", true);
+      let portfolioFilters = select("#portfolio-filters li", true);
 
       on(
         "click",
-        "#portfolio-flters li",
+        "#portfolio-filters li",
         function (e) {
           e.preventDefault();
           portfolioFilters.forEach(function (el) {
@@ -265,3 +265,4 @@
     });
   });
 })();
+

@@ -11,6 +11,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *,
 *:before,
@@ -21,6 +22,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  height: 100%;
 }
 
 a {
@@ -695,10 +697,10 @@ section {
 }
 /* portfolio-details.html */
 #footer_portfolio_details {
+  position: fixed;
   padding: 15px;
   color: #f4f6fd;
   font-size: 14px;
-  position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 9999;
@@ -715,8 +717,13 @@ section {
 }
 @media (max-width: 1199px) {
   #footer_portfolio_details {
+    position: fixed;
+    padding-right: 20px 15px;
+  }
+}
+@media (max-width: 900px) {
+  #footer_portfolio_details {
     position: static;
-    width: auto;
     padding-right: 20px 15px;
   }
 }
